@@ -1,7 +1,131 @@
-*{
+/* sets the margin of all the element to 10px on all sides and the background-color to black */
+body{
     margin: 10px;
+    background-color: rgb(161, 138, 138);
 }
 
-body{
-    background-color: black;
+/* Home section  which has the app name and nav bar. The styling is applied by id */
+#home{
+    margin: -1px -1px 0px -1px;
+    padding-bottom: 2cm;
+    background-color: #ba68c8;
+}
+
+
+/* Application name inside the home section. The styling is applied by tag name */
+header{
+    font-size: 30px;
+    color: #d8b6ff;
+    float: left;
+    padding-left: 2cm;
+}
+
+
+/* Navigation Bar Container*/
+.topdiv{
+    float: right;
+    padding-right: 1cm;
+}
+
+/* Navigation Bar Buttons */
+.topmenu{
+    color: #d3d3d3;
+    font-size: 20px;
+    background-color: #4a148c;
+    margin: 10px;
+    padding: 10px;
+}
+
+.topmenu:hover{
+    color: white;
+    font-weight:bolder;
+    background-color:purple;
+}
+
+
+/* Container for all the three conversion calculator sections   */
+#all-conversion-sections{
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+
+figure{
+    float: left;
+    width: 200px;
+}
+
+figure img{
+    width: 200px;
+}
+
+figcaption{
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+.convert-btn{
+    font-size: 20px;
+    border-radius: 40px;
+    border: transparent;
+    width: fit-content;
+    background-color: lightgreen;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.convert-btn:hover{
+    cursor: pointer;
+}
+
+
+/* The calculator panel */
+.b {
+  border-top-style: solid;
+  border-top-width: 20px;
+  border-radius: 10px;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex; /* flexible box display */
+  margin-left: 50px;
+}
+
+.temperature {
+    border-top-color: green; 
+}
+
+.weight { border-top-color: coral; }
+.distance { border-top-color: blueviolet; }
+
+legend {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
+/* Floating icon for the home button */
+.iconbutton{
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    background-color: rgb(225, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:40px;
+    left:0;
+    }
+.iconbutton img {
+    width:30px
+}
+    
+footer {
+    background-color:rgb(240, 234, 245);
+    margin-top: 20px;
 }
