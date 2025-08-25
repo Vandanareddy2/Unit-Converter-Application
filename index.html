@@ -4,6 +4,7 @@
         <!-- This is your page title that appears on the browser window or tab -->
         <title>Unit Conversions</title>
         <link rel="stylesheet" href="style.css">
+        <script src = "script.js"></script>
     </head>
     <body>
         <section id="home">
@@ -40,7 +41,7 @@
                             <input type="number" id="celsius"/> <br/>
 
                             <!-- The conversion button -->
-                            <button id="temperature" class="convert-btn"> Convert </button> <br/>
+                            <button id="temperature" class="convert-btn" onclick = "temperature()"> Convert </button> <br/>
 
                             <!-- Label for Temperature output -->
                             <input type="number" id="fahrenheit"> <br/>
@@ -73,7 +74,7 @@
                             <input type="number" id="kilo"> <br/>
 
                             <!-- The conversion button -->
-                            <button id="weight" class="convert-btn"> Convert </button> <br/>
+                            <button id="weight" class="convert-btn" onclick = "weight()"> Convert </button> <br/>
 
                             <!-- Label for Weight output -->
                             <input type="number" id="pounds"> <br/>
@@ -106,7 +107,7 @@
                             <input type="number" id="km"> <br/>
 
                             <!-- The conversion button -->
-                            <button id="distance" class="convert-btn"> Convert </button> <br/>
+                            <button id="distance" class="convert-btn" onclick = "distance()"> Convert </button> <br/>
 
                             <!-- Label for Distance output -->
                             <input type="number" id="miles"> <br/>
